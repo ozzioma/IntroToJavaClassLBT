@@ -1,4 +1,4 @@
-public class SalaryLevel
+public class SalaryLevel implements SalaryLevelInterface, Payroll
 {
     private String grade;
     private double salary;
@@ -20,12 +20,18 @@ public class SalaryLevel
     }
 
     //polymorphism
+    @Override
     public double calculateSalary()
     {
         return salary*2;
     }
 
-    //polymorphism, same method,same name, difft params
+    @Override
+    public boolean isProcessed() {
+        return false;
+    }
+//
+//    //polymorphism, same method,same name, difft params
     public double calculateSalary(double multiplier)
     {
         return salary*multiplier;
