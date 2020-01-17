@@ -1,4 +1,4 @@
-public class TaxBracket
+public class TaxBracket extends BaseTaxBracket
 {
     private String grade;
     private String taxPercent;
@@ -35,5 +35,10 @@ public class TaxBracket
 
     public void setAfterTaxAmount(double afterTaxAmount) {
         this.afterTaxAmount = afterTaxAmount;
+    }
+
+    @Override
+    public double calculateVAT() {
+        return 200;
     }
 }

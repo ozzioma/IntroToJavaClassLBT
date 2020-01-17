@@ -1,7 +1,22 @@
-public class SalaryLevel
+public class SalaryLevelImpl implements SalaryLevelInterface, Payroll
 {
     private String grade;
     private double salary;
+
+//    public SalaryLevel()
+//    {
+//
+//    }
+
+    public SalaryLevelImpl(double _salary,String _grade)
+    {
+        setSalary(_salary);
+        setGrade(_grade);
+
+//        this.salary=_salary;
+//        this.grade=_grade;
+
+    }
 
     public String getGrade() {
         return grade;
@@ -20,12 +35,18 @@ public class SalaryLevel
     }
 
     //polymorphism
+    @Override
     public double calculateSalary()
     {
         return salary*2;
     }
 
-    //polymorphism, same method,same name, difft params
+    @Override
+    public boolean isProcessed() {
+        return false;
+    }
+//
+//    //polymorphism, same method,same name, difft params
     public double calculateSalary(double multiplier)
     {
         return salary*multiplier;
