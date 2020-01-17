@@ -1,4 +1,4 @@
-public class SalaryLevel implements SalaryLevelInterface, Payroll
+public class SalaryLevelImpl implements SalaryLevelInterface, Payroll
 {
     private String grade;
     private double salary;
@@ -8,7 +8,7 @@ public class SalaryLevel implements SalaryLevelInterface, Payroll
 //
 //    }
 
-    public SalaryLevel(double _salary,String _grade)
+    public SalaryLevelImpl(double _salary,String _grade)
     {
         setSalary(_salary);
         setGrade(_grade);
