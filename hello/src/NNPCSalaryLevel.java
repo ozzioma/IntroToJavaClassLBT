@@ -2,6 +2,11 @@ public class NNPCSalaryLevel extends SalaryLevel{
 
     private double bonus;
 
+    public NNPCSalaryLevel()
+    {
+        super(9000,"N234");
+    }
+
     public double getBonus() {
         return bonus;
     }

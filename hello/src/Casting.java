@@ -13,7 +13,7 @@ public class Casting
         armySalaryLevel.setOverTime(300);
         armySalaryLevel.setGrade("Level 16");
 
-        SalaryLevel salaryLevel=new SalaryLevel();
+        SalaryLevel salaryLevel=new SalaryLevel(3000,"345");
         salaryLevel.setSalary(6000);
         salaryLevel.setGrade("Level 12");
 
