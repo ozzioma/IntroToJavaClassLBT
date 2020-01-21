@@ -1,5 +1,7 @@
-public class ArmySalaryLevel extends SalaryLevel {
+public class ArmySalaryLevel extends SalaryLevelImpl {
 
+    //private String grade;
+    //private double salary;
     private double deductions;
     private double overTime;
     public static final double DEDUCTION_LIMIT =5000;

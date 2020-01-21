@@ -1,4 +1,4 @@
-public class NNPCSalaryLevel extends SalaryLevel{
+public class NNPCSalaryLevel extends SalaryLevelImpl{
 
     private double bonus;
 

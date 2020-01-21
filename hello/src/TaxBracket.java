@@ -1,7 +1,7 @@
 public class TaxBracket extends BaseTaxBracket
 {
-    private String grade;
-    private String taxPercent;
+    private String grade; //10
+    private String taxPercent; //
     private double taxAmount;
     private double afterTaxAmount;
 

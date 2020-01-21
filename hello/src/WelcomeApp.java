@@ -38,9 +38,9 @@ public class WelcomeApp {
     public static void RunExamples2() {
         System.out.println("Hello from Example2");
 
-        SalaryLevel level1 = new SalaryLevel(100, "111");
-        level1.setGrade("100");
-        level1.setSalary(10000);
+//        SalaryLevel level1 = new SalaryLevel(100, "111");
+//        level1.setGrade("100");
+//        level1.setSalary(10000);
 
 
         ArmySalaryLevel level2 = new ArmySalaryLevel();
@@ -92,6 +92,7 @@ public class WelcomeApp {
     public static void exceptionExample2() {
         ArmySalaryLevel level = new ArmySalaryLevel();
         level.setSalary(2000);
+        level.setGrade(null);
 
         double salary = level.calculateSalary2(6000, 200);
         System.out.println("salary is->" + salary);
