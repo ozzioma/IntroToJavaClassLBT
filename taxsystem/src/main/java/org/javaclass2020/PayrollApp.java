@@ -18,6 +18,8 @@ public class PayrollApp
     {
         try
         {
+            String name = "Chief Ozzy";
+            //String name2='Chief Ozzy';
 
             Class.forName("com.mysql.cj.jdbc.Driver");
 
@@ -41,10 +43,13 @@ public class PayrollApp
             Statement stmt = connection.createStatement();
             ResultSet resultSet = stmt.executeQuery(selectSql);
 
+            //boolean hasData=false;
 
             while (resultSet.next())
             {
                 System.out.println(resultSet.getString("name"));
+
+               // hasData=resultSet.next();
             }
         } catch (SQLException e)
         {

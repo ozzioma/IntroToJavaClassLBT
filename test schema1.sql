@@ -73,9 +73,3 @@ aftertax decimal(12,3) not null,
 description varchar(256)
 )
 
-
-
-Employees->Salary Levels
-Employees->Tax brackets
-
-
